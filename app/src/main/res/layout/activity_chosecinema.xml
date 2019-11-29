@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#141931"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200">
+
+
+        <fm.jiecao.jcvideoplayer_lib.JCVideoPlayer
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/jcvp"
+            ></fm.jiecao.jcvideoplayer_lib.JCVideoPlayer>
+
+        <ImageView
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:layout_marginTop="@dimen/dp_40"
+            android:background="@drawable/back" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_cinema_movie_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="@dimen/sp_14"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时长"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/tv_cinema_movie_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp_6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_80">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评分"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/tv_cinema_movie_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp_6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp_80">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="导演"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/tv_cinema_movie_director"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/dp_6"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="#1c2243">
+
+        <Button
+            android:id="@+id/btn_chose_region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#ffffff"
+            android:text="海淀区"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="@dimen/dp_5"
+            android:background="@drawable/arrow_drop_down"
+            android:layout_marginLeft="@dimen/dp_73"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/btn_chose_region"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今天 05-14"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="@dimen/dp_112"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="@dimen/dp_5"
+            android:background="@drawable/arrow_drop_down"
+            android:layout_marginLeft="@dimen/dp_187"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格最低"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="@dimen/dp_230"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:background="@drawable/icon_search"
+            android:layout_marginLeft="@dimen/dp_300"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_cinema_region_cinema"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_24">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

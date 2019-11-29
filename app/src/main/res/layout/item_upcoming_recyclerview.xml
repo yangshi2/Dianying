@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_118"
+        android:layout_marginTop="@dimen/dp_10">
+        
+        <LinearLayout
+            android:layout_width="@dimen/dp_312"
+            android:layout_height="@dimen/dp_98"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="vertical"
+            android:background="#1c2243">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:layout_marginTop="@dimen/dp_14"
+                android:layout_marginLeft="@dimen/dp_108"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:id="@+id/tv_releaseTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_108"
+                android:textSize="@dimen/dp_12"
+                android:textColor="#ffffff"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_7"
+                android:layout_marginLeft="@dimen/dp_108">
+
+                <TextView
+                    android:id="@+id/tv_wantSeeNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textSize="@dimen/dp_12"
+                    android:textColor="#ffffff"/>
+                
+                <Button
+                    android:id="@+id/btn_appointment"
+                    android:layout_width="@dimen/dp_45"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_84"
+                    android:text="预约"
+                   android:background="@android:color/holo_red_light"
+                    android:textColor="#ffffff"/>
+                
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_imageUrl"
+            android:layout_width="@dimen/dp_88"
+            android:layout_height="@dimen/dp_118"
+            android:layout_marginLeft="@dimen/dp_10"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

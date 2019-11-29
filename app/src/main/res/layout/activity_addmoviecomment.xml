@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#141931"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_28"
+        android:layout_marginTop="@dimen/dp_40">
+
+        <ImageView
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="写影评"
+            android:textColor="#d8d8d8"
+            android:textSize="@dimen/dp_16"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_38"
+        android:layout_marginTop="@dimen/dp_24"
+        android:background="#1c2243">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dp_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的评分"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#ffffff"
+            android:layout_marginTop="@dimen/dp_20"/>
+
+        <EditText
+            android:id="@+id/et_add_moviecomment_score"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="#1c2243"
+            android:textColor="#ffffff"
+            android:hint="请输入评分"
+            android:textColorHint="#ffffff"
+            android:paddingLeft="@dimen/dp_10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="写点评价吧"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#ffffff"
+            android:layout_marginTop="@dimen/dp_20"/>
+
+        <EditText
+            android:id="@+id/et_add_moviecomment"
+            android:layout_width="@dimen/dp_312"
+            android:layout_height="@dimen/dp_129"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="#1c2243"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:paddingLeft="@dimen/dp_10"/>
+
+        <Button
+            android:id="@+id/btn_submit_comment"
+            android:layout_width="@dimen/dp_312"
+            android:layout_height="@dimen/dp_36"
+            android:text="提交"
+            android:textColor="#ffffff"
+            android:background="@drawable/shapeslogin"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginTop="@dimen/dp_143"/>
+
+    </LinearLayout>
+
+</LinearLayout>

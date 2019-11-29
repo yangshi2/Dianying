@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#141931"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剧情简介"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginTop="@dimen/dp_30"/>
+
+        <TextView
+            android:id="@+id/tv_jianjie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="@dimen/sp_12"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="演职人员"
+            android:textColor="#ffffff"
+            android:layout_marginTop="@dimen/dp_20"
+            android:textSize="@dimen/sp_14"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="导演"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#ffffff"
+            android:layout_marginTop="@dimen/dp_10"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/xiang_movieDirector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10">
+
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="演员"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#ffffff"
+            android:layout_marginTop="@dimen/dp_10"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/xiang_movieActor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10">
+
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</LinearLayout>

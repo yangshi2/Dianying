@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141931"
+    android:orientation="vertical"
+    tools:context="com.bw.movie.view.activity.YingYuanXiangQIngActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_28"
+        android:layout_marginTop="@dimen/dp_40">
+
+        <ImageView
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="影院详情"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_16" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_cinemaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="00"
+        android:textColor="#deffffff"
+        android:textSize="@dimen/sp_14" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_20">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="00"
+                android:textColor="#d3af56"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/dp_13"
+            android:layout_height="@dimen/dp_16"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_80" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_24"
+            android:text="到这里去"
+            android:textColor="#deffffff"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_38"
+        android:layout_marginTop="@dimen/dp_22"
+        android:background="#1c2243">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout_cinema_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_70"
+            android:layout_marginRight="@dimen/dp_70"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabTextColor="#ffffff"></com.google.android.material.tabs.TabLayout>
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_cinema_details"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"></androidx.viewpager.widget.ViewPager>
+
+    <Button
+        android:id="@+id/btn_check_theater_schedules"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#e8185e"
+        android:text="查看该影院电影排期"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

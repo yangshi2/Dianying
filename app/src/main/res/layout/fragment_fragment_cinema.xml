@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#141931"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_26"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_27"
+            >
+
+            <ImageButton
+                android:id="@+id/img_location"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_24"
+                android:background="@drawable/icon_location" />
+            <TextView
+                android:id="@+id/textdw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="13dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_toRightOf="@id/img_location"
+                android:text="定位"
+                android:textColor="@android:color/white" />
+            <ImageButton
+                android:layout_width="@dimen/dp_18"
+                android:layout_height="@dimen/dp_18"
+                android:layout_alignParentRight="true"
+                android:id="@+id/img_search"
+                android:background="@drawable/icon_search"
+                />
+        </RelativeLayout>
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/teb_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabTextColor="#ffffff"></com.androidkun.xtablayout.XTabLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="640dp"></androidx.viewpager.widget.ViewPager>
+    </LinearLayout>
+
+</ScrollView>

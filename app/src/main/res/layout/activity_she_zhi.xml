@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bw.movie.view.activity.SheZhiActivity"
+    android:orientation="vertical"
+    android:background="#141931">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:background="@drawable/back"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:layout_marginTop="@dimen/dp_40"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textSize="@dimen/sp_16"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_37"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_88"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_21"
+        android:background="@drawable/lin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清除缓存"
+                android:textColor="#deffffff"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textColor="#deffffff"
+                android:textSize="@dimen/sp_14"
+                android:layout_marginLeft="@dimen/dp_200"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="版本更新"
+                android:textColor="#deffffff"
+                android:textSize="@dimen/sp_14"/>
+
+            <ImageView
+                android:id="@+id/iv_update"
+                android:layout_width="@dimen/dp_7"
+                android:layout_height="@dimen/dp_7"
+                android:background="@drawable/shape"
+                android:layout_marginLeft="@dimen/dp_205"
+                android:layout_marginTop="@dimen/dp_8"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_54"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/lin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重置密码"
+                android:textColor="#deffffff"
+                android:textSize="@dimen/sp_14"/>
+
+            <ImageView
+                android:layout_width="@dimen/dp_7"
+                android:layout_height="@dimen/dp_7"
+                android:background="@drawable/shape"
+                android:layout_marginLeft="@dimen/dp_205"
+                android:layout_marginTop="@dimen/dp_8"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_54"
+        android:text="退出登录"
+        android:textColor="#deffffff"
+        android:textSize="@dimen/sp_14"
+        android:background="@drawable/lin"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+</LinearLayout>

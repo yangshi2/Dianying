@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#141931"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_40">
+
+            <ImageView
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:background="@drawable/back"
+                android:layout_marginLeft="@dimen/dp_28"/>
+
+            <TextView
+                android:id="@+id/tv_movie_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电影名称"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#ffffff"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <fm.jiecao.jcvideoplayer_lib.JCVideoPlayer
+            android:id="@+id/jcv_movie_video"
+            android:layout_width="@dimen/dp_280"
+            android:layout_height="@dimen/dp_120"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_20"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/room_movieSeat"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_230"
+            android:layout_marginLeft="@dimen/dp_38"
+            android:layout_marginRight="@dimen/dp_44" />
+
+        <LinearLayout
+            android:id="@+id/lin_cinema_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择影厅和时间"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#ffffff"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_28"
+                android:layout_marginTop="@dimen/dp_20"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_movie_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_marginTop="@dimen/sp_14">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_pay_method"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择支付方式"
+                android:layout_marginTop="@dimen/dp_14"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:textSize="@dimen/sp_14"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginLeft="@dimen/dp_24">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:background="@drawable/wx_invalid_name"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信支付"
+                    android:layout_marginLeft="@dimen/dp_34"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_centerVertical="true" />
+
+                <RadioButton
+                    android:id="@+id/rb_wx_buy_ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_24"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginLeft="@dimen/dp_24">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:background="@drawable/zfb_invalid_name"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信支付"
+                    android:layout_marginLeft="@dimen/dp_34"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_centerVertical="true"/>
+
+                <RadioButton
+                    android:id="@+id/rb_zfb_buy_ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_24"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_buy_cinema_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FF8B83"
+        android:text="请先选座"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_14"/>
+
+    <Button
+        android:id="@+id/btn_purchaseOrder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentBottom="true"
+        android:text="立即下单"
+        android:textColor="#ffffff"
+        android:background="#F15050"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

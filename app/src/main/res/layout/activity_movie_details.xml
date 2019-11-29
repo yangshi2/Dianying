@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#141931"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_360"
+                android:layout_height="@dimen/dp_500">
+
+                <ImageView
+                    android:id="@+id/iv_details_imageUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_marginLeft="@dimen/dp_28"
+                    android:layout_marginTop="@dimen/dp_40"
+                    android:background="@drawable/back" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp_23">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_50"
+                        android:text="评分"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/sp_12" />
+
+                    <TextView
+                        android:id="@+id/tv_details_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_84"
+                        android:text="00"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/sp_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp_105"
+                        android:text="评分"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/sp_12" />
+
+                    <TextView
+                        android:id="@+id/tv_details_commentNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp_50"
+                        android:text="00"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/sp_12" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_details_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_7"
+                    android:text="00"
+                    android:textColor="#d8d8d8"
+                    android:textSize="@dimen/sp_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_details_movieType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_7"
+                        android:text="00"
+                        android:textColor="#d8d8d8"
+                        android:textSize="@dimen/sp_12" />
+
+                    <TextView
+                        android:id="@+id/tv_details_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_7"
+                        android:text="00"
+                        android:textColor="#d8d8d8"
+                        android:textSize="@dimen/sp_12" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_details_releaseTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_7"
+                    android:text="00"
+                    android:textColor="#d8d8d8"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:orientation="vertical"
+                    android:background="#1c2243">
+
+                    <com.androidkun.xtablayout.XTabLayout
+                        android:id="@+id/tab_layout_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:layout_marginRight="@dimen/dp_30"
+                        app:tabGravity="fill"
+                        app:tabMode="fixed"
+                        app:tabTextColor="#ffffff">
+
+                    </com.androidkun.xtablayout.XTabLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager_details"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_600">
+
+
+            </androidx.viewpager.widget.ViewPager>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_film_critics"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#e8be18"
+            android:text="写影评"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_14" />
+
+        <Button
+            android:id="@+id/btn_choose_ticket"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#e8185e"
+            android:text="选座购票"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+</LinearLayout>
